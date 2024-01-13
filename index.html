@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veterinaria</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        .padre {
+            background-color: #daac00;
+            height: 60px;
+            padding: 20px;
+            text-align: center;
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            justify-content: space-evenly;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        img {
+            width: 100%;
+        }
+
+        .padre .logo {
+            width: 204px;
+            margin-right: 50px;
+            margin-left: 60px;
+            padding-left: 0px;
+        }
+        
+
+        .padre ul {
+            list-style: none;
+            font-size: 20px;
+            margin-left: 12px;
+            display: flex;
+            gap: 40px;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .padre li{
+            width: 100px;
+        }
+
+        .buscador {
+            display: flex;
+            align-content: center;
+            padding-top: 18px;
+            padding-left: 60px;
+        }
+
+        button {
+            height: 32px;
+            background-color: aqua;
+            border: 0;
+        }
+        .padre input{
+            height: 30px;
+            background-color: #fcc302;
+            border: 0px;
+        }
+
+        .tio {
+            background-image: url(imgs4.png);
+            height: 500px;
+            padding: 0%;
+            height: 75vh;
+            width: 100%;
+            background-repeat: no-repeat;
+            background-size: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+
+        .sobrino1 {
+            width: 100px;
+            text-align: center;
+            color: white;
+            float: left;
+            margin: 160px;
+
+        }
+
+        .sobrino10 {
+            width: 80px;
+            color: white;
+            text-align: center;
+        }
+
+        .perros {
+            background-color: #fcc302;
+            height: 110vh;
+            text-align: center;
+            color: white;
+            padding: 50px;
+
+        }
+
+        .dogs {
+            display: flex;
+            justify-content: center;
+            gap: 45px;
+
+        }
+
+        .tachado {
+            text-decoration: line-through;
+        }
+
+        .dog {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .buy {
+            background-color: #00bec9;
+            border-radius: 80px;
+            width: 150px;
+        }
+
+        .title11 {
+            margin: 0px;
+            font-size: 50px;
+            text-align: center;
+        }
+
+        .lore1 {
+            font-size: 30px;
+
+        }
+
+
+
+        .enfermeras {
+            text-align: center;
+            padding-right: 50px;
+            padding-left: 50px;
+            background-color: white;
+            height: 115vh;
+            font-family: Verdana;
+
+        }
+
+        .carta {
+            margin-top: 80px;
+            float: left;
+            margin-left: 100px;
+            display: flex;
+            gap: 100px;
+
+        }
+
+        .texto {
+            float: left;
+        }
+
+        .redes {
+            display: flex;
+            gap: 13px;
+            justify-content: center;
+        }
+
+        .the {
+            font-size: 50px;
+        }
+
+        .lore {
+            font-family: sans-serif;
+            font-size: 30px;
+        }
+
+        .perro1 {
+            background-color: #fcc302;
+            display: flex;
+            width: 100%;
+            color: white;
+            height: 100%;
+            margin: 0;
+
+        }
+
+        .perro2 {
+            width: 50%;
+            padding-left: 100px;
+            padding-top: 130px;
+
+        }
+
+        .fi {
+            font-size: 60px;
+
+        }
+
+        .lo2 {
+            font-size: 30px;
+
+        }
+
+        .perro3 {
+            display: flex;
+            gap: 50px;
+            text-align: center;
+
+        }
+
+        .perro4 {
+            width: 35%;
+            padding-left: 50px;
+            padding-right: 100px;
+
+
+        }
+
+        .boton1 {
+            background-color: #00bec9;
+            width: 100px;
+            padding: 15px;
+            border-radius: 5px;
+
+        }
+
+        .boton2 {
+            border: 1px solid;
+            width: 100px;
+            padding: 15px;
+            border-radius: 5px;
+        }
+
+        .pastor {
+            background-color: white;
+            width: 100%;
+            margin: 0;
+            display: flex;
+            height: 100vh;
+        }
+
+        .pastor1 {
+            width: 50%;
+            padding-left: 100px;
+            padding-top: 150px;
+        }
+
+        .past {
+            font-size: 50px;
+
+
+        }
+
+        .pas {
+            font-size: 20px;
+        }
+
+        .pastor2 {
+            background-color: #fcc302;
+            width: 15%;
+            text-align: center;
+            color: white;
+            border-radius: 3px;
+            padding: 15px;
+        }
+
+        .pastor3 {
+            width: 45%;
+            padding-top: 50px;
+            padding-left: 15px;
+            padding-right: 100px;
+        }
+
+        .footer {
+            background-color: #343434;
+            color: white;
+            display: flex;
+            width: 93.3%;
+            font-family: arial, helvetica, sans-serif;
+            padding: 50px;
+        }
+
+        .footer li {
+            text-decoration: none;
+        }
+
+        .fora {
+            display: flex;
+        }
+
+        .footer input{
+            background-color: orange;
+            width: 296px;
+            border: 0;
+        }
+
+        .footer button {
+            background-color: aqua;
+            border: 0px;
+            width: 74px;
+            height: 54px;
+        }
+        .footer button img{
+            width: 60%;
+        }
+        .footer .ul1{
+            flex-direction:column;
+
+        }
+
+        .redes10 {
+            display: flex;
+            justify-content: flex-end;
+            padding-top: 15px;
+        }
+
+        .footer .title {
+            text-align: right;
+            font-size: 30px;
+        }
+
+        .redes10 img {
+            width: 37px;
+            margin: 7px;
+        }
+
+        .footer .col1,
+        .col2,
+        .col3 {
+            margin: 0 0 0 0;
+        }
+
+        .footer ul {
+            list-style: none;
+
+        }
+
+        .footer .col1{
+            padding: 0px;
+            display: flex;
+            flex-wrap: nowrap;
+            flex-direction: column;
+            padding-left: 210px;
+
+        }
+        .footer .col2{padding: 0px;
+            display: flex;
+            flex-wrap: nowrap;
+            flex-direction: column;
+            padding-left: 180px;
+        }
+        .footer .col3{
+            padding-left: 170px;
+
+        }
+
+        .footer ul{
+            display: flex;
+            justify-content: space-evenly;
+            margin-left: 0px;
+            padding: 0px;
+            gap: 15px
+        }
+
+        body {
+            margin: 0;
+        }
+
+        .azul {
+            background-color: #fcc302;
+            text-align: center;
+            padding: 50px;
+            color: white;
+            height: 111vh;
+        }
+
+        .azul1 {
+            display: flex;
+            justify-content: center;
+            gap: 45px;
+            width: 1109px;
+            padding: 0 160px 0 160px;
+        }
+
+        .azul2 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+        }
+
+        .azultitle {
+            font-size: 50px;
+        }
+
+        .azulp {
+            font-size: 30px;
+        }
+
+        .oreja {
+            background-color: white;
+            width: 93%;
+            margin: 0;
+            display: flex;
+            height: 95vh;
+        }
+
+
+        .oreja1 {
+            width: 50%;
+            padding-left: 0px;
+            padding-top: 144px;
+            text-align: end;
+            padding-right: 80px;
+        }
+
+        .oreja4 {
+            font-size: 44px;
+
+        }
+
+        .oreja5 {
+            font-size: 20px;
+        }
+
+        .oreja2 {
+            background-color: #fcc302;
+            width: 15%;
+            text-align: center;
+            color: white;
+            border-radius: 3px;
+            padding: 15px;
+            margin-left: 525px;
+        }
+
+        .oreja3 {
+            width: 42%;
+            padding-top: 72px;
+            padding-left: 15px;
+            padding-left: 125px;
+        }
+
+        .blanco {
+            background-color: white;
+            margin: 0px;
+            color: black;
+            text-align: center;
+            padding: 50px;
+            padding: 0px;
+        }
+
+        .blanco1 {
+            display: flex;
+            padding: 100px;
+            gap: 70px;
+            padding-top: 25px;
+        }
+
+        .blanco2 {
+            border: 1px solid;
+        }
+
+        .blancotitle {
+            font-size: 50px;
+        }
+
+        .blancop {
+            font-size: 30px;
+        }
+
+        .blancotex {
+            padding: 35px;
+            text-align: left;
+            padding-top: 0px;
+        }
+
+        .aqua {
+            color: rgb(5, 219, 219);
+        }
+    </style>
+
+<body>
+    <div class="padre">
+        <div class="logo">
+            <img src="logo.png">
+        </div>
+        <div class="lista">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">service</a></li>
+                <li><a href="">contact</a></li>
+            </ul>
+        </div>
+        <div class="buscador">
+            <div class="buscador1">
+                <input type="text" placeholder="search..">
+            </div>
+            <div class="boton10">
+                <button><img class="lupa" src="lupa.png"></button>
+            </div>
+        </div>
+    </div>
+
+    <div class="perro1">
+        <div class="perro2">
+            <h1 class="fi">Firs I wanted to be<br>a veterinarian</h1>
+            <p class="lo2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. C I, optio dolorum? Dolorum
+                provident repudiandae ees.</p>
+            <div class="perro3">
+                <div class="boton1"><a href="#">Contac Us</a></div>
+                <div class="boton2"><a href="#">Our service</a></div>
+            </div>
+        </div>
+
+        <div class="perro4">
+            <img src="prro.png">
+        </div>
+    </div>
+
+
+    <div class="pastor">
+        <div class="pastor1">
+            <h1 class="past">As a veterinarian and<br> lover of animals.</h1>
+            <p class="pas">Lorem ipsum, dolor sit amet consectetur adipisicing<br> elit. Quae asperiores it amet
+                consectetur a.<br> Quae asperiores it amet consectetur a.</p>
+            <div class="pastor2"><a href="#">
+                    Our Service</a>
+            </div>
+        </div>
+        <div class="pastor3">
+            <img src="perrro.png">
+        </div>
+    </div>
+
+    <div class="azul">
+        <h1 class="azultitle">Title Here</h1>
+        <p class="azulp">Lorem ipsum, dolor sit amet consectetur adipisicing elit.<br> Ipsum autem in dignissimos.</p>
+        <div class="azul1">
+            <div class="azul2">
+                <img src="mujepe.png">
+                <h2>Veterinarian</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum reiciendis molestias dolore.
+                    Pariatur, sunt .</p>
+            </div>
+            <div class="azul2">
+                <img src="perro8.png">
+                <h2>Vaccination Care</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum reiciendis molestias dolore.
+                    Pariatur, sunt .</p>
+            </div>
+            <div class="azul2">
+                <img src="perro12.png">
+                <h2>Dental Care</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum reiciendis molestias dolore.
+                    Pariatur, sunt .</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="oreja">
+        <div class="oreja3">
+            <img src="perrro.png">
+        </div>
+        <div class="oreja1">
+            <h1 class="oreja4">As a veterinarian and<br> lover of animals.</h1>
+            <p class="oreja5">Lorem ipsum, dolor sit amet consectetur adipisicing<br> elit. Quae asperiores it amet
+                consectetur a.<br> Quae asperiores it amet consectetur a.</p>
+            <div class="oreja2"><a href="#">
+                    Our Service</a>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <div class="perros">
+        <h1 class="title11">Title Here</h1>
+        <p class="lore1">Lorem ipsum dolor sit amet consectetur adipisicing elit. ad <br>ab voluptas est impedit, magnam
+            libero </p>
+        <div class="dogs">
+            <div class="dog">
+                <img src="dog2.png">
+                <h1>
+                    <span class="tachado">$50</span> 30
+                </h1>
+                <div class="buy">
+                    <a href="#">
+                        <h2>BUY NOW</h2>
+                    </a>
+                </div>
+            </div>
+            <div class="dog">
+                <img src="dog64.png">
+                <h1>
+                    <span class="tachado">$50</span> 30
+                </h1>
+                <div class="buy">
+                    <a href="#">
+                        <h2>BUY NOW</h2>
+                    </a>
+                </div>
+            </div>
+            <div class="dog">
+                <img src="dog76.png">
+                <h1>
+                    <span class="tachado">$50</span> 30
+                </h1>
+                <div class="buy">
+                    <a href="#">
+                        <h2>BUY NOW</h2>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+    <div class="enfermeras">
+        <h1 class="the">The vetcare team</h1>
+        <p class="lore">Lorem ipsum dolor sit kjdjdk amet consectetur adipisicing elit. <br>obcaecati, ab
+            quos, susto repellat r
+            nobis.</p>
+        <div class="carta">
+            <div class="chicas">
+                <img src="mujer45.png">
+                <h2>Jennifer Mullen</h2>
+                <p>VETERINARY</p>
+                <div class="redes">
+                    <a href="#">
+                        <img src="instagram (1).png">
+                    </a>
+                    <a href="#">
+                        <img src="face.png">
+                    </a>
+                    <a href="#">
+                        <img src="twiter.png">
+                    </a>
+                    <a href="#">
+                        <img src="wapp.png">
+                    </a>
+                </div>
+            </div>
+            <div class="chicas">
+                <img src="mujer89.png">
+                <h2>Sheeren Collins</h2>
+                <p>ADMINISTRATION</p>
+                <div class="redes">
+                    <a href="#">
+                        <img src="instagram (1).png">
+                    </a>
+                    <a href="#">
+                        <img src="face.png">
+                    </a>
+                    <a href="#">
+                        <img src="twiter.png">
+                    </a>
+                    <a href="#">
+                        <img src="wapp.png">
+                    </a>
+                </div>
+            </div>
+            <div class="chicas">
+                <img src="mujer34.png">
+                <h2>Jennifer Mullen</h2>
+                <p>VETERINARY</p>
+                <div class="redes">
+                    <a href="#">
+                        <img src="instagram (1).png">
+                    </a>
+                    <a href="#">
+                        <img src="face.png">
+                    </a>
+                    <a href="#">
+                        <img src="twiter.png">
+                    </a>
+                    <a href="#">
+                        <img src="wapp.png">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="tio">
+        <div class="sobrino1">
+            <img src="corazon.png">
+            <p>+34793</p>
+            <h5>Happy Clients</h5>
+        </div>
+        <div class="sobrino10">
+            <img src="estetoscopio.png">
+            <p>+45382</p>
+            <h5>Departament</h5>
+        </div>
+        <div class="sobrino1">
+            <img src="geringa.png">
+            <p>+54762</p>
+            <h5>Vaccinations</h5>
+        </div>
+    </div>
+
+    <div class="blanco">
+        <h1 class="blancotitle">Recent Posts</h1>
+        <p class="blancop">Lorem ipsum, dolor si consectetur adipisicing elit.<br> Ipsum autem in dignissimos.</p>
+        <div class="blanco1">
+            <div class="blanco2">
+                <img src="mujepe.png">
+                <div class="blancotex">
+                    <h2>As a veterinarian and<br>lover of animlas</h2>
+                    <p class="aqua">FEBRUARY 09,2020</p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum reiciendis molestias dolore.
+                        Pariatur, sunt .</p>
+                    <h3 class="aqua">Read More+</h3>
+                </div>
+            </div>
+            <div class="blanco2">
+                <img src="perro8.png">
+                <div class="blancotex">
+                    <h2>As a veterinarian and<br>lover of animlas</h2>
+                    <p class="aqua">FEBRUARY 09,2020</p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum reiciendis molestias dolore.
+                        Pariatur, sunt .</p>
+                    <h3 class="aqua">Read More+</h3>
+                </div>
+            </div>
+            <div class="blanco2">
+                <img src="perro12.png">
+                <div class="blancotex">
+                    <h2>As a veterinarian and<br>lover of animlas</h2>
+                    <p class="aqua">FEBRUARY 09,2020</p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum reiciendis molestias dolore.
+                        Pariatur, sunt .</p>
+                    <h3 class="aqua">Read More+</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="col1">
+            <h1>About</h1>
+            <ul class="ul1">
+                <li>History</li>
+                <li>Our Team</li>
+                <li>Brand Guidelines</li>
+                <li>Terms&Condition</li>
+                <li>Privacy Policy</li>
+            </ul>
+        </div>
+        <div class="col2">
+            <h1>About</h1>
+            <ul class="ul1">
+                <li>History</li>
+                <li>Our Team</li>
+                <li>Brand Guidelines</li>
+                <li>Terms&Condition</li>
+                <li>Privacy Policy</li>
+            </ul>
+        </div>
+        <div class="col3">
+            <div class="title">
+                <h4>
+                    Title Here
+                </h4>
+                <p>Lorem, ipsum dolor sit amet.</p>
+            </div>
+            <div class="fora">
+                <input type="text">
+                <button><img src="avion.png"></button>
+            </div>
+            <div class="redes10">
+                <div><a href="#"><img src="Instagram.png"></a>
+                </div>
+                <div><a href="#"><img src="Facebook.png"></a>
+                </div>
+                <div><a href="#"><img src="Twitter.png"></a>
+                </div>
+                <div><a href="#"><img src="WhatsApp.png"></a>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
